@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="calcBox">
+      <div class="top">
+        <div class="">
+          <input type="text" class="screen" disabled />
+        </div>
+        <div class="">
+          <input type="text" class="result" disabled>
+        </div>
+      </div>
+    
+      
+      <div class="down">
+        <div class="line1">
+          <button class="del" onclick="clr()">C</button>
+          <button onclick="display(value)" class="operator"value="/">÷</button>
+          <button onclick="display(value)" value="*" class="operator">x</button>
+          <button onclick="del()" class="next"><i class="fa fa-trash"></i></button></button>
+        </div>
+        <div class="line2">
+          <button value="7" class="num" onclick="display(value)">7</button>
+          <button value="8" class="num" onclick="display(value)" >8</button>
+          <button value="9" class="num" onclick="display(value)" >9</button>
+          <button onclick="display(value)" value="-" class="operator"><i class="fa fa-minus"></i></button></button>
+        </div>
+        <div class="line3">
+          <button value="4" class="num" onclick="display(value)" >4</button>
+          <button value="5" class="num" onclick="display(value)" >5</button>
+          <button value="6" class="num" onclick="display(value)" >6</button>
+          <button onclick="display(value)"  value="+" class="plus"dis>+</button></button>
+        </div>
+        <div class="line4">
+         
+          <button value="1" class="num" onclick="display(value)" >1</button>
+          <button value="2" class="num" onclick="display(value)" >2</button>
+          <button value="3" class="num" onclick="display(value)" >3</button>
+          <button onclick="power()" class="">^²</button></button>
+        </div>
+        <div class="line5">
+          <button onclick="display(value)"  value="." class="period">•</button>
+          <button onclick="display(value)"  value="0" class="zero">0</button>
+          <button  onclick="percent()"> %</button>
+          <button onclick="solve()" class="">=</button>
+        </div>
+      </div>
+      
+    </div>
+      
+    
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
